@@ -1,0 +1,25 @@
+<h1 class="text-primary">
+  Enquiry Form
+</h1>
+<div class="container">
+        <form>
+      
+          <label for="fullname">Full Name <font style="color: red;">*</font></label>
+          <input type="text" id="fname" name="name" [(ngModel)]="contactUsData.name" required>
+      
+          <label for="email">Email <font style="color: red;">*</font></label>
+          <input type="text" id="email" name="email" [(ngModel)]="contactUsData.email" required>
+      
+          <label for="Contact Number">Contact Number <font style="color: red;">*</font></label>
+          <input type="text" id="contact number" name="contactnum" [(ngModel)]="contactUsData.contactnum" required>
+         
+      
+          <label for="subject">Subject Area <font style="color: red;">*</font></label>
+          <textarea id="subject" name="message" [(ngModel)]="contactUsData.message" required></textarea>
+      
+          <div align="center">
+              <input type="button" value="Submit" (click)="submit()" class="bg-primary">
+          </div>
+      
+        </form>
+      </div> 

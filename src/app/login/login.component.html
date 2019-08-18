@@ -1,0 +1,24 @@
+
+<div class="row"  style="padding: 30px; background-color: lightgrey; width: 28%; border-radius: 5px; margin: 30px auto;">
+
+    <div class="col-md-12 col-md-offset-2">
+      <h1 style="margin-bottom: 30px;">Login Portal </h1>
+      <form>
+        <div class="form-group">
+          <label for="email">Email address:</label>
+          <input type="email" class="form-control" name="email" [(ngModel)]="loginData.email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" name="password" [(ngModel)]="loginData.password" id="pwd">
+        </div>
+        <div align="center">
+          <input type="button" (click)="onSubmit()" class="btn btn-primary" value="Login">
+          <a style="float: right; color: green"  [routerLink]="['/register']"> Register</a>
+        </div>
+        <div *ngIf="invalidLogin" class="error">
+          <div>Invalid credentials.</div>
+        </div>
+      </form>
+    </div>
+  </div>

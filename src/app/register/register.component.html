@@ -1,0 +1,29 @@
+<div class="row" style="margin-top: 30px;">
+    <div class="col-md-6" style="background-color: lightgrey; padding: 30px; margin: 0 auto;">
+      <h2 class="text-center">Register</h2>
+      <form>
+        <div class="form-group">
+          <label for="Name">Name:</label>
+          <input type="text" [(ngModel)]="user.name" name="name" class="form-control" id="Name">
+        </div>
+    
+        <div class="form-group">
+          <label for="Email">Email:</label>
+          <input [(ngModel)]="user.email"  name="email" class="form-control" id="Email">
+        </div>
+    
+        <div class="form-group">
+          <label for="Password">Password:</label>
+          <input [(ngModel)]="user.password"  name="password" class="form-control" id="Password">
+        </div>
+  
+        
+        <div class="form-group">
+          <label for="Confirm password">Confirm password:</label>
+          <input [(ngModel)]="user.c_password" name="c_password" class="form-control" id="c_password">
+        </div>
+    
+        <button style="float: right;" class="btn btn-success" (click)="submit()">Register</button>
+      </form>
+    </div>
+  </div>
